@@ -55,5 +55,12 @@ namespace Lesson_2
             }
 
         }
+
+        private void InvoiceTotalForm_Load(object sender, EventArgs e)
+        {
+            textBoxSubTotal.Focus();
+            textBoxSubTotal.Text = "0";
+            textBoxSubTotal.SelectAll();
+        }
     }
 }

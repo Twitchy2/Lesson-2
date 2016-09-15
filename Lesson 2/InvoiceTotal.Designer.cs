@@ -133,8 +133,10 @@
             // 
             // InvoiceTotalForm
             // 
+            this.AcceptButton = this.buttonCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.buttonExit;
             this.ClientSize = new System.Drawing.Size(294, 112);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonCalculate);
@@ -148,6 +150,7 @@
             this.Controls.Add(this.labelSubTotal);
             this.Name = "InvoiceTotalForm";
             this.Text = "Invoice Total";
+            this.Load += new System.EventHandler(this.InvoiceTotalForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
